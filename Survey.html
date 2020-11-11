@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>marvel cinematic universe survey</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Goldman&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+  <script src="jquery.js"></script>
+  <script src="./main.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+</head>
+
+<body>
+
+  <main>
+
+  <form id='survey-form' onsubmit = 'storeData()'>
+    <div>
+    <h1 id='title'>You are really a Marvel universe fan !!!</h1>
+  </div>
+
+  <div>
+    <p id='description'>Thank you for taking the time to complete this survey</p>
+  </div>
+
+  <div class = 'form-group'>
+    <p>Name</p>
+      <label>
+        <input id='name' placeholder='Enter your name' class='cases' required>
+      </label>
+  </div>
+
+
+  <div class = 'form-group'>
+    <p>Age</p>
+      <label>
+        <input id='age' type='number' placeholder='Age' min='10' max='80' class='cases' required>
+      </label>
+  </div>
+
+
+  <div class = 'form-group'>
+    <p >EMAIL</p>
+      <label>
+        <input id='email' type='email' placeholder='Enter your email' class='cases' autocomplete="on"  required>
+      </label>
+  </div>
+
+  <div class = 'form-group'>
+      <p>Which option best describes your current role?</p>
+      <select class = 'cases' required>
+        <optgroup>
+        <option selected="" >Select current role</option>
+        <option >Student</option>
+        <option >Full Time Job</option>
+        <option >Full Time Learner</option>
+        <option >Other</option>
+       </optgroup>
+      </select>
+    </div>
+
+  <div class = 'form-group'>
+      <p>Do you consider yourself a super fan of the Marvel universe</p>
+      <label>
+        <input name="super-fan" type="radio" checked>Definitely
+      </label>
+      <br>
+      <label>
+        <input name="super-fan" type="radio">Maybe
+      </label>
+      <br>
+      <label>
+        <input name="super-fan" type="radio">Not sure
+      </label>
+  </div>
+
+
+<div class = 'form-group'>
+      <p>Wich character do you prefer the most</p>
+      <label>
+        <input id="Iron-Man" name="character" type="checkbox">Iron Man
+        <div>
+          <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/ironman_hom.jpg"; border-radius:50px/>
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Hulk"  name="character" type="checkbox">Hulk
+        <div>
+          <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/acotilletta2--hulk_(house_of_m)_442.jpg" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Black-Widow"  name="character" type="checkbox">Black Widow
+        <div>
+          <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/blackwidowult.jpg" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Doctor-Strange"  name="character" type="checkbox">Doctor Strange
+        <div>
+          <img src="https://comicvine1.cbsistatic.com/uploads/scale_medium/12/124259/7261353-rco022_1582718254.jpg" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Thor"  name="character" type="checkbox">Thor
+        <div>
+          <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/thorult01.jpg" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Captain-America"  name="character" type="checkbox">Captain America
+        <div>
+          <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/ultimate_cap_hed.jpg" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Thanos"  name="character" type="checkbox">Thanos
+        <div>
+          <img src="https://www.excalibur-comics.fr/10540-large_default/thanos-1-2020.jpg" />
+        </div>
+
+      </label>
+      <br>
+      <label>
+        <input id="Hawkeye"  name="character" type="checkbox">Hawkeye
+        <div>
+          <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/homnthwk.jpg" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Falcon"  name="character" type="checkbox">Falcon
+        <div>
+          <img src="https://images-na.ssl-images-amazon.com/images/S/cmx-images-prod/Item/637871/637871._SX1600_QL80_TTD_.jpg" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Spider-Man"  name="character" type="checkbox">Spider-Man
+        <div>
+          <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/037smm_com_crd_01.jpg" />
+        </div>
+
+      </label>
+      <br>
+      <label>
+        <input id="Scarlet-Witch"  name="character" type="checkbox">Scarlet Witch
+        <div>
+          <img src="https://static.wikia.nocookie.net/marveldatabase/images/4/48/Scarlet_Witch_Vol_2_2_Anka_Variant_Textless.jpg/revision/latest/top-crop/width/360/height/450?cb=20151205225342" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Captain-Marvel"  name="character" type="checkbox">Captain Marvel
+        <div>
+          <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/msmarvel_houseofm.jpg" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Ant-Man"  name="character" type="checkbox">Ant-Man
+        <div>
+          <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/ant-man-eric-o-grady-earth-616.jpg" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Black-Panther"  name="character" type="checkbox">Black Panther
+        <div>
+          <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/blkpantherhouseofm.jpg" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Nick-Fury"  name="character" type="checkbox">Nick Fury
+        <div>
+          <img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/016nfj_com_crd_01.jpg" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Star-Lord"  name="character" type="checkbox">Star-Lord
+        <div>
+          <img src="https://images-na.ssl-images-amazon.com/images/S/cmx-images-prod/Item/114525/DIG023603_2._SX1280_QL80_TTD_.jpg" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Gamora"  name="character" type="checkbox">Gamora
+        <div>
+          <img src="https://images-na.ssl-images-amazon.com/images/S/cmx-images-prod/Item/427331/427331._SX200_QL80_TTD_.jpg" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Rocket-Raccoon"  name="character" type="checkbox">Rocket Raccoon
+        <div>
+          <img src="https://images-na.ssl-images-amazon.com/images/I/91CJ+DWjO7L.jpg" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Groot"  name="character" type="checkbox">Groot
+        <div>
+          <img src="https://images-na.ssl-images-amazon.com/images/S/cmx-images-prod/Item/494482/494482._SX1600_QL80_TTD_.jpg" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Drax"  name="character" type="checkbox">Drax
+        <div>
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Drax-cover.jpg/250px-Drax-cover.jpg" />
+        </div>
+      </label>
+      <br>
+      <label>
+        <input id="Deadpool"  name="character" type="checkbox">Deadpool
+        <div>
+          <img src="https://images-na.ssl-images-amazon.com/images/I/91pyAS30ehL.jpg" />
+        </div>
+      </label>
+      <br>
+  </div>
+
+  
+
+  
+  <div class = 'form-group'>
+      <p >What do you like the most about the Marvel universe ?</p>
+      <textarea class = 'cases' placeholder="Enter your opinion here..."></textarea>
+    </div>
+
+  <div>
+    <input id ='submit' class = 'cases' type="submit" value="Submit">
+  </div>
+
+
+
+  <div class = 'form-group'>
+      <button id='rating' class='cases popup' type="button">
+        The most popular character so far
+      </button>
+  </div>
+
+</form>
+
+<div class="hover-popup">
+
+  <span class="helper"></span>
+
+   <div id ='sorted'>
+
+</div>
+
+
+</main>
+</body>
+</html>
